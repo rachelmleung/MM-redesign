@@ -191,11 +191,73 @@ textarea {
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
-
-ul {
-    margin:0;
+/*
+.nav ul {
     padding: 0;
+    list-style: none;
+    display:flex;
+    direction: row;
+    justify-content: space-around;
 }
+
+.nav {
+    width: 50%;
+    margin: 0 auto;
+}*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+
+
+
+
+
+
 .title-center {
     text-align: center;
 }
@@ -220,26 +282,44 @@ ul {
 
 
 .home-products {
-    background:red;
+    background-image: url("/img/products.jpg");
+    background-color: #cccccc;
+    height: 30%; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     margin: 10% 0 0 0;
     padding: 15% 0 15% 0;
     text-align: center;
 }
-.home-products h3 {
+.home-products h2 {
+    color:white;
+    text-shadow:
+    -1px -1px 0 #444,  
+    1px -1px 0 #444,
+    -1px 1px 0 #444,
+     1px 1px 0 #444;
     margin: 0 0 15% 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 .box-link {
     margin: 3% 0 3% 0; /* top bottom margin to offset the padding*/
+
 }
 .box-link a {
-    border: 1px solid black;
+    border: 2px solid #333;
+    background:rgba(255,255,255, 0.8);
+    color:black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
     padding: 3% 15% 3% 15%; /* padding compensated spacing with box link margin above*/
 }
 
 .box-link a:hover {
-      background:#333;
+      background:rgba(123, 123, 123, 0.8);
+      border: 2px solid #fff;
+      color:white;
       cursor: pointer;
       -webkit-transition: background-color 2s ease-out;
       -moz-transition: background-color 2s ease-out;
@@ -284,6 +364,12 @@ ul {
     justify-content: center; 
 }
 
+.product-category {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    text-align: center;
+
+}
 .container {
   position: relative;
   width: auto;
@@ -312,10 +398,14 @@ ul {
 
 .container:hover .overlay {
   opacity: .9;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text {
   color: white;
+
   font-size: 1em;
   position: absolute;
  /* top: 50%;
@@ -323,7 +413,8 @@ ul {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);*/
-    margin: 25% 8% 0 8%;
+    margin: 0 8% 0 8%;
+    padding:0;
   text-align: left;
 }
 /*--------------- CONTACT PAGE - MOBILE -----------------*/
@@ -379,10 +470,42 @@ ul {
 
 @media only screen and (min-width:768px) {
   /* Style adjustments for viewports that meet the condition */
- .home-about {
+ .nav ul {
+    padding: 0;
+    list-style: none;
+    display:flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+.nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+    
+    .home-about {
      margin: 0 12% 0 12%;
     }   
     
+
+.home-products {
+    height: 30%; /* You must set a specified height */
+    margin: 5% 0 0 0;
+    padding: 10% 0 10% 0;
+}
+.home-products h2 {
+    margin: 0 0 8% 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.box-link {
+    margin: 3% 0 3% 0; /* top bottom margin to offset the padding*/
+}
+.box-link a {
+    padding: 2% 10% 2% 10%; /* padding compensated spacing with box link margin above*/
+}
 /*--------------- ABOUT PAGE - TABLET -----------------*/
  .about {
      margin: 0 12% 0 12%;
@@ -409,7 +532,6 @@ ul {
 }   
 
 .vendor-products ul {
-
     display:inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -431,7 +553,6 @@ ul {
 .container {
     position: relative;
     width:100%;
-    background:green;
 
 }
     
@@ -454,10 +575,17 @@ ul {
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
+/* there was some lag with text starting on top so added flex below*/
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container:hover .overlay {
   opacity: .9;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text {
@@ -469,7 +597,7 @@ ul {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);*/
-    margin: 15% 8% 0 8%;
+    margin: 0 8% 0 8%;
   text-align: left;
 }    
     
@@ -525,7 +653,25 @@ ul {
  .home-about {
      margin: 0 15% 0 15%;
     }   
-    
+
+.home-products {
+    height: 30%; /* You must set a specified height */
+    margin: 5% 0 0 0;
+    padding: 10% 0 10% 0;
+}
+.home-products h2 {
+    font-size: 3em;
+    margin: 0 5% 5% 5%;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.box-link {
+    margin: 3% 0 3% 0; /* top bottom margin to offset the padding*/
+}
+.box-link a {
+    padding: 1% 8% 1% 8%; /* padding compensated spacing with box link margin above*/
+}
 /*--------------- ABOUT PAGE - DESKTOP -----------------*/
     
  .about {
@@ -533,7 +679,7 @@ ul {
     }   
 /*--------------- PRODUCTS PAGE - DESKTOP -----------------*/
 
-    .products-about {
+.products-about {
      margin: 0 15% 0 15%;    
 }
 
@@ -544,6 +690,10 @@ ul {
 .vendor-products {
     margin: 0 10% 0 10%;  
 }   
+    
+.vendor-products li {
+        width:40%;
+    }
 
 
 /*--------------- CONTACT PAGE - DESKTOP -----------------*/

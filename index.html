@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+    <script src="https://kit.fontawesome.com/54c541004e.js"></script>
+
 </head>
 
 <body>
@@ -23,12 +25,45 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+<!--<div class="nav">
 <ul>
   <li><a href="#">Home</a></li>
-  <li><a href="/about.html">About</a></li>
+  <li><a href="">About</a></li>
   <li><a href="/products.html">Our Products</a></li>
-  <li><a href="/contact.html">Contact Us</a></li>
+  <li><a href="">Contact Us</a></li>
 </ul> 
+</div>-->
+    
+    
+<nav class="navbar">
+    
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+    
+        <a href="#" class="logo">logo</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="/products.html" class="nav-links">Products</a>
+            </li>
+            <li>
+                <a href="/about.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="/contact.html" class="nav-links">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Blog</a>
+            </li>
+        </ul>
+</nav>
+    
+    
+    
+    
 <div class="title-center">    
   <p>Welcome to</p>
   <h1>Marina Meats</h1>
@@ -51,7 +86,7 @@
 </div>
     
   <div class="home-products">
-      <h3>From the Bay Area's best producers </h3>
+      <h2>From the Bay Area's best producers </h2>
       <div class='box-link'>
         <a href="/products.html">Our Products</a>
         </div>
@@ -62,6 +97,15 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+    <script>
+    let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
+    </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
