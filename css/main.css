@@ -191,19 +191,9 @@ textarea {
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
-/*
-.nav ul {
-    padding: 0;
-    list-style: none;
-    display:flex;
-    direction: row;
-    justify-content: space-around;
-}
 
-.nav {
-    width: 50%;
-    margin: 0 auto;
-}*/
+
+/* ------------------- NAV BAR - MOBILE ---------------*/
 
 * {
     box-sizing: border-box;
@@ -253,14 +243,69 @@ textarea {
   display: block;
 }
 
+/* ------------------- FOOTER - MOBILE ---------------*/
+.footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background: #333;
+    color:#ddd;
+}
+.footer-contact-container {
+    margin:0 auto;
+    padding: 20% 0 0 0;
+}
 
+.footer-contact-visit{
+    margin: 0 auto;
+    padding: 5% 0 0 0;
+}
+.footer-contact-info{
+    margin: 0 auto;
+    padding: 20% 0 0 0;
+}
 
+.footer-hours {
+    margin: 0 auto;
+    border: none;
+    padding: 20% 0 0 0;
+}
+.social-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;   
+    width:30%;
+    margin: 0 auto;
+    padding: 20% 0 15% 0;
+}
 
+.social-icons i {
+    font-size: 2em;
+    color:#ddd;
+}
 
-
+.footer-copyright {
+    margin: 0 auto;  
+    padding: 0 0 8% 0;
+}
+/* ------------------- HOME PAGE - MOBILE ---------------*/
 
 .title-center {
     text-align: center;
+    margin: 8% 0 0 0;
+}
+
+.title-center p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.title-center h1 {
+    text-align: center;
+    margin: 0 0 8% 0;
+    padding: 0;
 }
 
 .page-main-photo {
@@ -283,24 +328,25 @@ textarea {
 }
 
 #about-link {
-    margin: 5% 0 0 0;
+    margin: 10% 0 0 0;
     text-align: center;
 }
 
 
 .home-products {
-    background-image: url("/img/products.jpg");
+    background-image: url("/img/products.jpg") ;
     background-color: #cccccc;
     height: 30%; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    
     margin: 10% 0 0 0;
     padding: 15% 0 15% 0;
     text-align: center;
 }
 .home-products h2 {
-    color:white;
+    color:#ddd;
     text-shadow:
     -1px -1px 0 #444,  
     1px -1px 0 #444,
@@ -309,6 +355,12 @@ textarea {
     margin: 0 0 15% 0;
     padding: 0;
     text-transform: uppercase;
+}
+
+#about-link a {
+    background:;
+    color: red;
+    font-weight: 400;
 }
 
 .box-link {
@@ -334,19 +386,19 @@ textarea {
       transition: background-color 2s ease-out;
 }
 
+
+
 /*--------------- ABOUT PAGE - MOBILE -----------------*/
 
 .about {
-    margin: 0 5% 0 5%;  
-}
-
-#about-link a {
-    background:;
-    color: red;
-    font-weight: 400;
+    margin: 0 5% 10% 5%;  
 }
 
 
+
+#about-photo {
+    margin: 10% 0 10% 0;
+}
 /*--------------- PRODUCTS PAGE - MOBILE -----------------*/
 
 .products-about {
@@ -361,6 +413,13 @@ textarea {
     margin: 15% 0 0 0;
 }
 
+.vendor h4 {
+   margin: 2% 0 10% 0; 
+}
+
+.vendor h3{
+    margin: 2% 0 0 0;
+} 
 .vendor li {
     list-style: none;
     padding: 0 0 2em 0;
@@ -439,16 +498,19 @@ textarea {
     align-content: space-between;
     }
 
+.address-contact-container h3{
+    text-align: left;
+    margin: 0 0 3% 0;
+}
+
 .contact-visit {
     margin: 0 auto;
 }
 
-.contact-visit h3 {
-    text-align: left;
-}
 
 .contact-info {
     margin: 0 auto;
+    padding: 10% 0 0 0;
 }
 
 .contact-info p {
@@ -457,14 +519,16 @@ textarea {
 .hours {
     border: 1px solid #c6c6c6;
     margin: 10% 20% 10% 20%;
-    padding: 2% 0 2% 0;
+    padding: 8% 0 8% 0;
 }
 
 .hours h4 {
     text-align: center;
+    margin: 0 0 3% 0;
 }
 .hours p{
      text-align: center;   
+    margin: 0 0 5% 0;
 }
 .contact-map {
     margin: 1em 1em 1em 1em;       
@@ -477,6 +541,8 @@ textarea {
 
 @media only screen and (min-width:768px) {
   /* Style adjustments for viewports that meet the condition */
+    
+/* ------------------- NAV BAR - TABLET ---------------*/
  .navbar {
         display: flex;
         justify-content: space-between;
@@ -513,7 +579,66 @@ textarea {
     .nav-links:hover {
         color: rgba(198, 108, 108, 0.89);
     }
+    
+/* ------------------- FOOTER - TABLET ---------------*/
+.footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    background: #333;
+    color:#ddd;
+}
+.footer-contact-container {
+    margin:0 auto;
+    padding: 10% 0 10% 0;
+    display: inline-flex;
+    align-content: space-between;
+    width:90%;
+}
 
+.footer-contact-visit{
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    
+}
+.footer-contact-info{
+    margin: 0 auto;
+    padding: 0 0 0 0;
+
+}
+    
+.footer-hours {
+     padding: 0 0 0 0;       
+    }
+.social-icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;   
+    width:20%;
+    margin: 0 auto;
+    padding: 0 0 8% 0;
+}
+
+.social-icons i {
+
+    font-size: 2em;
+    color:#ddd;
+}
+
+/* ------------------- HOME PAGE - TABLET ---------------*/    
+.title-center p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.title-center h1 {
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0;
+}
+    
 .page-main-photo {
     display:flex;
      justify-content: center;  
@@ -690,7 +815,23 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 
 /*--------------- HOME PAGE - DESKTOP -----------------*/
- 
+.title-center {
+    text-align: center;
+    margin: 5% 0 0 0;
+    
+    } 
+.title-center p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.title-center h1 {
+    text-align: center;
+    margin: 0 0 3% 0;
+    padding: 0;
+}
+    
+    
 .page-main-photo {
     display:flex;
      justify-content: center;  
