@@ -212,8 +212,7 @@ textarea {
 }
 .navbar {
     font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-image: /*linear-gradient(260deg, #2376ae 0%, #c16ecf   100%)*/;
     padding-bottom: 10px;
 }
 .main-nav {
@@ -223,7 +222,7 @@ textarea {
 .nav-links,
 .logo {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: #333;
 }
 
 
@@ -231,21 +230,23 @@ textarea {
     text-align: center;
     margin: 15px auto;
 }
-.logo {
+
+.logo img {
     display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 12%;
+    margin: 4% 0 0 4%;
 }
 
 
 .navbar-toggle {
     position: absolute;
+    display: inline-flex;
     top: 10px;
-    right: 20px;
+    right: 5%;
     cursor: pointer; 
-    color: rgba(255,255,255,0.8);
-    font-size: 24px;
+    color: #333;
+    font-size: 2em;
+    margin: 4% 0 0 0;
 }
 
 .active {
@@ -262,8 +263,18 @@ textarea {
     text-align: center;
 }
 
+.page-main-photo {
+    display:flex;
+     justify-content: center;  
+    width: 100%;
+}
+
+.page-main-photo img {
+    width:90%;
+}
+
 .home-about {
-    margin: 0 5% 0 5%;
+    margin: 5% 5% 0 5%;
     padding: 0 0 5% 0 ;
     display:flex;
     flex-wrap: wrap;
@@ -271,10 +282,6 @@ textarea {
     flex-direction: column;
 }
 
-.page-main-photo {
-    display:flex;
-     justify-content: center;   
-}
 #about-link {
     margin: 5% 0 0 0;
     text-align: center;
@@ -470,22 +477,55 @@ textarea {
 
 @media only screen and (min-width:768px) {
   /* Style adjustments for viewports that meet the condition */
- .nav ul {
-    padding: 0;
-    list-style: none;
+ .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0 2% 0 0;
+        width:100%;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    .logo img {
+        width: 35%;
+        margin: 10% 0 0 6%;
+    }
+
+
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(198, 108, 108, 0.89);
+    }
+
+.page-main-photo {
     display:flex;
-    direction: row;
-    justify-content: space-around;
+     justify-content: center;  
+    width: 100%;
 }
 
-.nav {
-    width: 50%;
-    margin: 0 auto;
+.page-main-photo img {
+    width:75%;
 }
-
     
     .home-about {
-     margin: 0 12% 0 12%;
+     margin: 6% 12% 0 12%;
     }   
     
 
@@ -650,10 +690,23 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 
 /*--------------- HOME PAGE - DESKTOP -----------------*/
- .home-about {
-     margin: 0 15% 0 15%;
-    }   
+ 
+.page-main-photo {
+    display:flex;
+     justify-content: center;  
+    width: 100%;
+}
 
+.page-main-photo img {
+    width:70%;
+}
+        
+.home-about {
+     margin: 5% 15% 0 15%;
+    }   
+#about-link {
+    margin: % 0 0 0;       
+    }
 .home-products {
     height: 30%; /* You must set a specified height */
     margin: 5% 0 0 0;
