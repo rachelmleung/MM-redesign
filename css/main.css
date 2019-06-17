@@ -456,10 +456,15 @@ textarea {
   right: 0;
   height: 100%;
   width: 80%;
-    margin: 0 auto;
+margin: 0 auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #444;
+/* there was some lag with text starting on top so added flex below*/
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .container:hover .overlay {
@@ -750,7 +755,6 @@ textarea {
   margin: 0 auto;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
 /* there was some lag with text starting on top so added flex below*/
   display:flex;
   align-items: center;
