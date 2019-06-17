@@ -186,6 +186,37 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+p,a,h4 {
+    font-family: "Karla";
+    font-weight: 100;
+}
+
+h1,h2,h3 {
+    font-family: "Josefin Sans";
+    font-weight: 700;    
+}
+a {
+    text-decoration:none;
+}
+
+
+.vendor-about h2 a {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    text-decoration: none;
+    color:#333;
+ 
+}
+
+.vendor-about h2 a:hover {
+    color:green;
+      -webkit-transition: color .5s ease-out;
+      -moz-transition: color .5s ease-out;
+      -o-transition: color .5s ease-out;
+      transition: color .5s ease-out;
+}
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
 /* ==================== MOBILE =======================*/
@@ -299,12 +330,13 @@ textarea {
 
 .title-center p {
     text-align: center;
-    margin: 0;
+    margin: 0 0 2% 0;
     padding: 0;
+    font-size: 1em;
 }
 .title-center h1 {
     text-align: center;
-    margin: 0 0 8% 0;
+    margin: 0 0 5% 0;
     padding: 0;
 }
 
@@ -330,8 +362,18 @@ textarea {
 #about-link {
     margin: 10% 0 15% 0;
     text-align: center;
+    text-decoration: underline;
+    font-size: 1em;
+
 }
 
+#about-link a:hover {
+    color: blue;
+      -webkit-transition: color .5s ease-out;
+      -moz-transition: color .5s ease-out;
+      -o-transition: color .5s ease-out;
+      transition: color .5s ease-out;
+}
 
 .home-products {
     background-image: url("/img/products.jpg") ;
@@ -359,7 +401,7 @@ textarea {
 
 #about-link a {
     background:;
-    color: red;
+    color: #333;
     font-weight: 400;
 }
 
@@ -394,10 +436,20 @@ textarea {
     margin: 0 5% 10% 5%;  
 }
 
-
+.about p {
+    margin: 0 0 6% 0;
+}
 
 #about-photo {
     margin: 10% 0 10% 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-photo img {
+    margin: 0 0 5% 0;
 }
 /*--------------- PRODUCTS PAGE - MOBILE -----------------*/
 
@@ -476,7 +528,7 @@ margin: 0 auto;
 
 .text {
   color: white;
-
+  font-family: 'karla';
   font-size: 1em;
   position: absolute;
  /* top: 50%;
@@ -488,6 +540,18 @@ margin: 0 auto;
     padding:0;
   text-align: left;
 }
+
+.back-to-top {
+    margin: 0 auto;
+    padding: 0 0 8% 0;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-to-top a {
+ padding: 2% 0 2% 0;
+}
 /*--------------- CONTACT PAGE - MOBILE -----------------*/
 
 .contact-info-container {
@@ -495,7 +559,7 @@ margin: 0 auto;
 }
 
 .address-contact-container {
-    margin: 0 15% 0 15%; 
+    margin: 10% 15% 0 15%; 
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -530,13 +594,15 @@ margin: 0 auto;
 .hours h4 {
     text-align: center;
     margin: 0 0 3% 0;
+    font-family:'Josefin Sans';
 }
 .hours p{
      text-align: center;   
     margin: 0 0 5% 0;
 }
 .contact-map {
-    margin: 1em 1em 1em 1em;       
+    margin: 1em 1em 1em 1em; 
+    padding: 0 0 10% 0;
 }
 /* ==================== TABLET =======================*/
 /* ==================== TABLET =======================*/
@@ -640,8 +706,9 @@ margin: 0 auto;
 /* ------------------- HOME PAGE - TABLET ---------------*/    
 .title-center p {
     text-align: center;
-    margin: 0;
+    margin: 0 0 1% 0;
     padding: 0;
+    font-size: 1.1em;
 }
 .title-center h1 {
     text-align: center;
@@ -685,6 +752,11 @@ margin: 0 auto;
  .about {
      margin: 0 12% 8% 12%;
     }   
+    
+.about p {
+    margin: 0 0 3% 0;
+}
+
 
 /*--------------- PRODUCTS PAGE - TABLET -----------------*/
 .products-about {
@@ -712,6 +784,7 @@ margin: 0 auto;
     
 }   
 
+
 .vendor-products ul {
     display:inline-flex;
     flex-direction: row;
@@ -730,7 +803,12 @@ margin: 0 auto;
     width:40%;
     }
     
-    
+ .product-category {
+    margin: 0 auto;
+    padding: 5% 0 0 0;
+    text-align: center;
+
+}   
 .container {
     position: relative;
     width:100%;
@@ -781,6 +859,17 @@ margin: 0 auto;
   text-align: left;
 }    
     
+.back-to-top {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back-to-top a {
+ padding: 2% 0 2% 0;
+}
     
 /*--------------- CONTACT PAGE - TABLET -----------------*/
     
@@ -789,7 +878,7 @@ margin: 0 auto;
     background: ;
     display:flex;
     flex-direction: row;
-    padding: 3em 0 3em 0;
+    padding: 1% 0 3em 0;
     justify-content: space-around;
     }
     
@@ -819,7 +908,7 @@ margin: 0 auto;
     }
     
 .contact-map {
-     margin: 5% 12% 5% 12%;   
+     margin: 5% 12% 0 12%;   
     }
 /* ==================== DESKTOP =======================*/
 /* ==================== DESKTOP =======================*/
@@ -869,13 +958,15 @@ margin: 0 auto;
     } 
 .title-center p {
     text-align: center;
-    margin: 0;
+    margin: 0 0 1% 0;
     padding: 0;
+    font-size: 1.2em;
 }
 .title-center h1 {
     text-align: center;
     margin: 0 0 3% 0;
     padding: 0;
+    font-size: 3em;
 }
     
     
@@ -893,7 +984,7 @@ margin: 0 auto;
      margin: 5% 15% 0 15%;
     }   
 #about-link {
-    margin: 5% 0 5% 0;       
+    margin: 5% 0 0 0;       
     }
 .home-products {
     height: 30%; /* You must set a specified height */
@@ -920,20 +1011,37 @@ margin: 0 auto;
  .about {
      margin: 0 15% 5% 15%;
     } 
-    
+
+.about p {
+    margin: 0 0 2% 0;
+}
+
 #about-photo {
-        margin 5% 0 5% 0;
-    }
+    margin: 3% 0 3% 0;;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-photo img {
+    width:48%;
+    margin: 0 0 0 0;
+}
 /*--------------- PRODUCTS PAGE - DESKTOP -----------------*/
 
 .products-about {
      margin: 0 15% 0 15%;    
 }
 
+.vendor {
+    margin: 4% 0 0 0;
+    }
 .vendor-about {
      margin: 0 11% 0 11%;  
 }
-    
+  
 .vendor-products {
     margin: 0 10% 0 10%;  
 }   
@@ -942,7 +1050,22 @@ margin: 0 auto;
         width:30%;
         font-size: .8em; /* when around 900 px, too much text for the overlay*/
     }
+    .vendor-list {
+        width:90%;
+        margin: 0 auto;
+        padding: 0 0 4% 0;
+    }
+.back-to-top {
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.back-to-top a {
+ padding: 2% 0 2% 0;
+}
 
 /*--------------- CONTACT PAGE - DESKTOP -----------------*/
  .contact-info-container {
@@ -953,7 +1076,8 @@ margin: 0 auto;
     }
     
 .contact-map {
-    margin: 3% 22% 3% 22%;    
+    margin: 3% 22% 0 22%; 
+    padding: 0 0 6% 0;
     }
 }
     

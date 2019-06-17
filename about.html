@@ -16,6 +16,7 @@
 
   <meta name="theme-color" content="#fafafa">
     <script src="https://kit.fontawesome.com/54c541004e.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Karla&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -58,11 +59,15 @@
       <p>Story of Marina Meats - Family Owned in Addition to Marina Supermarket. Marina Meats is proud to provide the best quality by sourcing our meat, poultry and seafood products from a variety of sustainable farms.  Maybe there's one more sentence that goes here too. </p> 
     
  <div class="page-main-photo" id="about-photo">
-<img src="/icon.png" alt="Smiley face" height="" width="">
+<img src="img/marinameats.jpg" alt="Smiley face" height="" width="">
+<img src="img/lambcuts.png" alt="Smiley face" height="" width="">
 </div>
     <p>Suspendisse quis augue in lorem lacinia commodo. Integer ultrices dolor vel eros dictum cursus. Donec faucibus euismod consequat. Suspendisse ultrices massa erat, vel rutrum elit laoreet sit amet. Nam faucibus ultricies quam, eget ultrices mauris dictum vel. Praesent congue enim dapibus mauris interdum ultrices. </p>
-    
-    <p>Quisque at elit vitae ante feugiat pulvinar. Integer rutrum pulvinar tortor, ornare tempus orci imperdiet at. Etiam rutrum ultricies mollis. Suspendisse sit amet feugiat enim. Nullam bibendum in dolor non tincidunt. In ornare odio sed nisl interdum, ut porttitor mi viverra. Donec auctor sit amet neque vitae dapibus. Vestibulum ipsum nulla, convallis a efficitur id, gravida sit amet lacus.</p>
+    <p>Also mention the Marina Supermarket just a few buildings down the block.</p>
+
+    <div class="about-staff">
+
+    </div>
 </div>
     
     
@@ -77,11 +82,11 @@
         <p>(415) 673-6700</p>
         <p>marinameats@gmail.com</p>
     </div>   
-    <div class="footer-hours">
+<div class="footer-hours">
     <h3>Hours</h3>
-    <p>Mon - Fri &nbsp;&nbsp;&nbsp; 8:30AM–8PM</p>
-    <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–7PM</p>
-    <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9AM–7PM</p>  
+    <p>Mon - Fri  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–8PM</p>
+    <p>Saturdays &nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–7PM</p>
+    <p>Sundays &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9AM–7PM</p>  
     </div>
     </div>
         <span class="social-icons">
@@ -106,6 +111,16 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+    
+    <script>
+    let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
+    </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

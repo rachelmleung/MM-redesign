@@ -16,6 +16,7 @@
 
   <meta name="theme-color" content="#fafafa">
     <script src="https://kit.fontawesome.com/54c541004e.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Karla&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -47,16 +48,20 @@
 
         </ul>
 </nav>
+ 
     
+<div class="title-center"> 
+  <h1> Contact Us</h1>
+</div>
 <div class="contact-info-container"> 
 <div class="address-contact-container">
 <div class="contact-visit">
-    <h3>Stop by and say hi!</h3>
+    <h3>Stop by and say hi</h3>
 
     <p>2395 Chestnut St<br>San Francisco, CA 94123</p>
 </div> <!-- end contact-visit-->
     <div class="contact-info">
-        <h3>Contact us</h3>
+        <h3>Ask  us  questions</h3>
         <p>(415) 673-6700</p>
         <p>marinameats@gmail.com</p>
     </div>    
@@ -84,11 +89,11 @@
         <p>(415) 673-6700</p>
         <p>marinameats@gmail.com</p>
     </div>   
-    <div class="footer-hours">
+<div class="footer-hours">
     <h3>Hours</h3>
-    <p>Mon - Fri &nbsp;&nbsp;&nbsp; 8:30AM–8PM</p>
-    <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–7PM</p>
-    <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9AM–7PM</p>  
+    <p>Mon - Fri  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–8PM</p>
+    <p>Saturdays &nbsp;&nbsp;&nbsp;&nbsp; 8:30AM–7PM</p>
+    <p>Sundays &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9AM–7PM</p>  
     </div>
     </div>
         <span class="social-icons">
@@ -112,6 +117,16 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+    <script>
+    let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active');
+});
+    </script>
+    
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
